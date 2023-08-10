@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Vina+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&family=Sedgwick+Ave+Display&family=Vina+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">QR CODE GeneratOR</div>
+
+    <div class="container-data">
+      <div class="container-main">
+        <div class="cotainer-text">
+          <h1>qr code generator</h1>
+          <p class="text1">
+            Use this QR code generatorto allow users to accessyour website
+            simply and quickly!
+          </p>
+          <p class="text2">enter your url below to generate a QR code</p>
+        </div>
+
+        <div class="inputs">
+          <input placeholder="Enter Your Text" id="qrtext"></input>
+          <select id="dimensions">
+            <option value="100">100x100</option>
+            <option value="150">150x150</option>
+            <option value="200">200x200</option>
+            <option value="250" selected>250x250</option>
+            <option value="300">300x300</option>
+          </select>
+        </div>
+
+        <div class="container-btn">
+            <a href="" class="btn generateBtn" >Submit </a>
+            <a href=""  class="btn downloadBtn">Download</a>
+        </div>
+      </div>
+      <div class="container-image">
+        <img src="replace-img.gif" id="qr-img" class="scan-img" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
